@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://d06npj01xhx1p"]
+
+[ext_resource type="PackedScene" uid="uid://cqrnb0qbqp01s" path="res://objetos/caixa.tscn" id="1_pwgio"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_58agc"]
+
+[node name="RigidBody2D" instance=ExtResource("1_pwgio")]
+position = Vector2(259, 19)
+physics_material_override = SubResource("PhysicsMaterial_58agc")
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(660, 131)
